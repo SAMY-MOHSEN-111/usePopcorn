@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// function Test() {
+//     const [rating, setRating] = useState(0);
+//     return (
+//         <div>
+//             {/* this is in case we need access to the inner state */}
+//             {/* onSetRating is very important prop as it links the outside state with the inside one */}
+//             <StarRating color="blue" maxRating={10} onSetRating={setRating} defaultRating={0}/>
+//             <p>This movie has rating of {rating}</p>
+//         </div>
+//     );
+// }
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        {/*<Test/>*/}
+        <App/>
+    </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
